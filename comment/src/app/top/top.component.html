@@ -1,0 +1,14 @@
+<div class="row comment-box">
+  <div class="input-group">
+    <div class="input-group-prepend name">
+      <span class="input-group-text"></span>
+    </div>
+    <input type="text" aria-label="First name" class="form-control" #nameInputField>
+    <input type="text" aria-label="Last name" class="form-control name" #familyInputField>
+    <div class="input-group">
+      <textarea class="form-control write" aria-label="With textarea" #familyInputField></textarea>
+    </div>
+    <button class="btn btn-success sub" (click)="submit();">Submit</button>
+  </div>
+</div>
+

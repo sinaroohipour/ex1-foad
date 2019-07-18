@@ -1,0 +1,14 @@
+.comment-box{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+}
+.write{
+    height: 200px;
+}
+.name{
+    margin-bottom: 15px;
+}
+.sub{
+    margin-top: 15px;
+}
