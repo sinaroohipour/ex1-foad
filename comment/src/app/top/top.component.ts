@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, Output} from '@angular/core';
+import { Component, ViewChild, ElementRef, Output, OnInit } from '@angular/core';
 import { EventEmitter } from 'protractor';
 
 @Component({
@@ -7,6 +7,16 @@ import { EventEmitter } from 'protractor';
   styleUrls: ['./top.component.css']
 })
 
-export class TopComponent {
+export class TopComponent implements OnInit {
+  counter: number;
+  name: string;
+  family: string;
   constructor() { }
+
+  ngOnInit(){
+    
+  }
+  
+
+
 }

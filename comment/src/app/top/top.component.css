@@ -1,14 +1,27 @@
-.comment-box{
-    display: flex;
-    justify-content: center;
-    width: 800px;
+.comment-box {
+  display: flex;
+  justify-content: center;
+  width: 800px;
 }
-.write{
-    height: 200px;
+
+.write {
+  height: 100px;
 }
-.name{
-    margin-bottom: 15px;
+
+.name {
+  margin-bottom: 15px;
 }
-.sub{
-    margin-top: 15px;
+
+.sub {
+  margin-top: 15px;
+}
+.input-group-text{
+  margin-right: 10px;
+  border-radius: 4px!important;
+}
+.nameInput{
+  margin-right: 10px;
+}
+.form-control{
+  border-radius: 4px!important;
 }
