@@ -1,4 +1,5 @@
 <div class="row comment-box">
+  <!-------------------------->
   <div class="input-group">
     <div class="input-group-prepend name">
       <span class="input-group-text">FullName</span>
@@ -6,9 +7,22 @@
     <input type="text" aria-label="First name" class="form-control nameInput" #nameInputField>
     <input type="text" aria-label="Last name" class="form-control" #familyInputField>
     <div class="input-group">
-      <textarea class="form-control write" aria-label="With textarea" #familyInputField></textarea>
+      <textarea class="form-control write" aria-label="With textarea" #commentInputField></textarea>
     </div>
-    <button class="btn btn-primary sub" #submitButton>Submit</button>
+    <button (click)="addComment()" class="btn btn-primary sub" #submitButton>Submit</button>
   </div>
+  <!-------------------------->
+  <!-------------------------->
+  <div class="parent" *ngIf="comments != null">
+    <div class="child" *ngFor="let i of comments">
+      <div class="card comment-card">
+        <div class="card-body">
+          <h5 class="card-title">{{i.name + " " + i.family}}</h5>
+          <p class="card-text">{{i.comment}}</p>
+        </div>
+      </div>
+      <hr class="under">
+    </div>
+  </div>
+  <!-------------------------->
 </div>
-

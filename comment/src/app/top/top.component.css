@@ -25,3 +25,22 @@
 .form-control{
   border-radius: 4px!important;
 }
+.clear{
+  clear: both;
+}
+.parent{
+  margin-top: 20px;
+}
+.child{
+  margin-top: 20px;
+}
+.comment-card{
+  width: 800px;
+  background-color: black;
+}
+.under{
+  border-color: white;
+}
+.card-body{
+  color: rgb(130, 130, 130);
+}
